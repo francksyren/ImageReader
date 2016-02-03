@@ -1,0 +1,676 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		774407BC1BD7167F0090433E /* refresh.png in Resources */ = {isa = PBXBuildFile; fileRef = 774407BB1BD7167F0090433E /* refresh.png */; };
+		774407BF1BD71D230090433E /* TRVSURLSessionOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = 774407BE1BD71D230090433E /* TRVSURLSessionOperation.m */; };
+		774C268D1B692F4000BC3EBF /* applewatch.png in Resources */ = {isa = PBXBuildFile; fileRef = 774C268B1B692F4000BC3EBF /* applewatch.png */; };
+		774C268E1B692F4000BC3EBF /* Icon-60@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 774C268C1B692F4000BC3EBF /* Icon-60@3x.png */; };
+		77501BF41C607669004A28AC /* Post.m in Sources */ = {isa = PBXBuildFile; fileRef = 77501BF31C607669004A28AC /* Post.m */; };
+		77501BFA1C6084A0004A28AC /* NSString+HTML.m in Sources */ = {isa = PBXBuildFile; fileRef = 77501BF91C6084A0004A28AC /* NSString+HTML.m */; };
+		77501BFD1C6084DC004A28AC /* GTMNSString+HTML.m in Sources */ = {isa = PBXBuildFile; fileRef = 77501BFC1C6084DC004A28AC /* GTMNSString+HTML.m */; };
+		7781529B1B689CEE00D45004 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 7781529A1B689CEE00D45004 /* main.m */; };
+		7781529E1B689CEE00D45004 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 7781529D1B689CEE00D45004 /* AppDelegate.m */; };
+		778152A11B689CEE00D45004 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 778152A01B689CEE00D45004 /* ViewController.m */; };
+		778152A41B689CEE00D45004 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 778152A21B689CEE00D45004 /* Main.storyboard */; };
+		778152A61B689CEE00D45004 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 778152A51B689CEE00D45004 /* Assets.xcassets */; };
+		778152A91B689CEE00D45004 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 778152A71B689CEE00D45004 /* LaunchScreen.storyboard */; };
+		778152AE1B689CEF00D45004 /* 9GAG for Apple Watch.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = 778152AD1B689CEF00D45004 /* 9GAG for Apple Watch.app */; };
+		778152B41B689CEF00D45004 /* Interface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 778152B21B689CEF00D45004 /* Interface.storyboard */; };
+		778152B61B689CEF00D45004 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 778152B51B689CEF00D45004 /* Assets.xcassets */; };
+		778152BD1B689CEF00D45004 /* 9GAG for Apple Watch.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 778152BC1B689CEF00D45004 /* 9GAG for Apple Watch.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		778152C51B689CEF00D45004 /* InterfaceController.m in Sources */ = {isa = PBXBuildFile; fileRef = 778152C41B689CEF00D45004 /* InterfaceController.m */; };
+		778152C81B689CEF00D45004 /* ExtensionDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 778152C71B689CEF00D45004 /* ExtensionDelegate.m */; };
+		778152CB1B689CEF00D45004 /* NotificationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 778152CA1B689CEF00D45004 /* NotificationController.m */; };
+		778152CD1B689CEF00D45004 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 778152CC1B689CEF00D45004 /* Assets.xcassets */; };
+		778152E31B689DD400D45004 /* IRShareController.m in Sources */ = {isa = PBXBuildFile; fileRef = 778152DF1B689DD400D45004 /* IRShareController.m */; };
+		778152E41B689DD400D45004 /* IRTableRowController.m in Sources */ = {isa = PBXBuildFile; fileRef = 778152E11B689DD400D45004 /* IRTableRowController.m */; };
+		77A96FBF1B9EC86E005E52A4 /* downvote.png in Resources */ = {isa = PBXBuildFile; fileRef = 77A96FBA1B9EC86E005E52A4 /* downvote.png */; };
+		77A96FC11B9EC86E005E52A4 /* shareicon.png in Resources */ = {isa = PBXBuildFile; fileRef = 77A96FBC1B9EC86E005E52A4 /* shareicon.png */; };
+		77A96FC31B9EC86E005E52A4 /* upvote.png in Resources */ = {isa = PBXBuildFile; fileRef = 77A96FBE1B9EC86E005E52A4 /* upvote.png */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		778152AF1B689CEF00D45004 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 7781528E1B689CEE00D45004 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 778152AC1B689CEF00D45004;
+			remoteInfo = "ImageReader WatchKit App";
+		};
+		778152BE1B689CEF00D45004 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 7781528E1B689CEE00D45004 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 778152BB1B689CEF00D45004;
+			remoteInfo = "ImageReader WatchKit Extension";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		778152D41B689CEF00D45004 /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				778152BD1B689CEF00D45004 /* 9GAG for Apple Watch.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		778152D81B689CEF00D45004 /* Embed Watch Content */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "$(CONTENTS_FOLDER_PATH)/Watch";
+			dstSubfolderSpec = 16;
+			files = (
+				778152AE1B689CEF00D45004 /* 9GAG for Apple Watch.app in Embed Watch Content */,
+			);
+			name = "Embed Watch Content";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		774407BB1BD7167F0090433E /* refresh.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = refresh.png; sourceTree = "<group>"; };
+		774407BD1BD71D230090433E /* TRVSURLSessionOperation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TRVSURLSessionOperation.h; sourceTree = "<group>"; };
+		774407BE1BD71D230090433E /* TRVSURLSessionOperation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TRVSURLSessionOperation.m; sourceTree = "<group>"; };
+		774C268B1B692F4000BC3EBF /* applewatch.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = applewatch.png; sourceTree = "<group>"; };
+		774C268C1B692F4000BC3EBF /* Icon-60@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-60@3x.png"; sourceTree = "<group>"; };
+		77501BF21C607669004A28AC /* Post.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Post.h; sourceTree = "<group>"; };
+		77501BF31C607669004A28AC /* Post.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Post.m; sourceTree = "<group>"; };
+		77501BF81C6084A0004A28AC /* NSString+HTML.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+HTML.h"; sourceTree = "<group>"; };
+		77501BF91C6084A0004A28AC /* NSString+HTML.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+HTML.m"; sourceTree = "<group>"; };
+		77501BFB1C6084DC004A28AC /* GTMNSString+HTML.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "GTMNSString+HTML.h"; sourceTree = "<group>"; };
+		77501BFC1C6084DC004A28AC /* GTMNSString+HTML.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "GTMNSString+HTML.m"; sourceTree = "<group>"; };
+		778152961B689CEE00D45004 /* 9GAG for Apple Watch.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "9GAG for Apple Watch.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		7781529A1B689CEE00D45004 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		7781529C1B689CEE00D45004 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		7781529D1B689CEE00D45004 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		7781529F1B689CEE00D45004 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		778152A01B689CEE00D45004 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		778152A31B689CEE00D45004 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		778152A51B689CEE00D45004 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		778152A81B689CEE00D45004 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		778152AA1B689CEE00D45004 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		778152AD1B689CEF00D45004 /* 9GAG for Apple Watch.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "9GAG for Apple Watch.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		778152B31B689CEF00D45004 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Interface.storyboard; sourceTree = "<group>"; };
+		778152B51B689CEF00D45004 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		778152B71B689CEF00D45004 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		778152BC1B689CEF00D45004 /* 9GAG for Apple Watch.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "9GAG for Apple Watch.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
+		778152C21B689CEF00D45004 /* PushNotificationPayload.apns */ = {isa = PBXFileReference; lastKnownFileType = text; path = PushNotificationPayload.apns; sourceTree = "<group>"; };
+		778152C31B689CEF00D45004 /* InterfaceController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = InterfaceController.h; sourceTree = "<group>"; };
+		778152C41B689CEF00D45004 /* InterfaceController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = InterfaceController.m; sourceTree = "<group>"; };
+		778152C61B689CEF00D45004 /* ExtensionDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ExtensionDelegate.h; sourceTree = "<group>"; };
+		778152C71B689CEF00D45004 /* ExtensionDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ExtensionDelegate.m; sourceTree = "<group>"; };
+		778152C91B689CEF00D45004 /* NotificationController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NotificationController.h; sourceTree = "<group>"; };
+		778152CA1B689CEF00D45004 /* NotificationController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NotificationController.m; sourceTree = "<group>"; };
+		778152CC1B689CEF00D45004 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		778152CE1B689CEF00D45004 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		778152DE1B689DD400D45004 /* IRShareController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IRShareController.h; sourceTree = "<group>"; };
+		778152DF1B689DD400D45004 /* IRShareController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IRShareController.m; sourceTree = "<group>"; };
+		778152E01B689DD400D45004 /* IRTableRowController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IRTableRowController.h; sourceTree = "<group>"; };
+		778152E11B689DD400D45004 /* IRTableRowController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IRTableRowController.m; sourceTree = "<group>"; };
+		77A96FBA1B9EC86E005E52A4 /* downvote.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = downvote.png; sourceTree = "<group>"; };
+		77A96FBC1B9EC86E005E52A4 /* shareicon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = shareicon.png; sourceTree = "<group>"; };
+		77A96FBE1B9EC86E005E52A4 /* upvote.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = upvote.png; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		778152931B689CEE00D45004 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		778152B91B689CEF00D45004 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		7781528D1B689CEE00D45004 = {
+			isa = PBXGroup;
+			children = (
+				778152981B689CEE00D45004 /* ImageReader */,
+				778152B11B689CEF00D45004 /* ImageReader WatchKit App */,
+				778152C01B689CEF00D45004 /* ImageReader WatchKit Extension */,
+				778152971B689CEE00D45004 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		778152971B689CEE00D45004 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				778152961B689CEE00D45004 /* 9GAG for Apple Watch.app */,
+				778152AD1B689CEF00D45004 /* 9GAG for Apple Watch.app */,
+				778152BC1B689CEF00D45004 /* 9GAG for Apple Watch.appex */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		778152981B689CEE00D45004 /* ImageReader */ = {
+			isa = PBXGroup;
+			children = (
+				774C268B1B692F4000BC3EBF /* applewatch.png */,
+				774C268C1B692F4000BC3EBF /* Icon-60@3x.png */,
+				7781529C1B689CEE00D45004 /* AppDelegate.h */,
+				7781529D1B689CEE00D45004 /* AppDelegate.m */,
+				7781529F1B689CEE00D45004 /* ViewController.h */,
+				778152A01B689CEE00D45004 /* ViewController.m */,
+				778152A21B689CEE00D45004 /* Main.storyboard */,
+				778152A51B689CEE00D45004 /* Assets.xcassets */,
+				778152A71B689CEE00D45004 /* LaunchScreen.storyboard */,
+				778152AA1B689CEE00D45004 /* Info.plist */,
+				778152991B689CEE00D45004 /* Supporting Files */,
+			);
+			path = ImageReader;
+			sourceTree = "<group>";
+		};
+		778152991B689CEE00D45004 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				7781529A1B689CEE00D45004 /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		778152B11B689CEF00D45004 /* ImageReader WatchKit App */ = {
+			isa = PBXGroup;
+			children = (
+				77A96FB91B9EC86E005E52A4 /* Resources */,
+				778152B21B689CEF00D45004 /* Interface.storyboard */,
+				778152B51B689CEF00D45004 /* Assets.xcassets */,
+				778152B71B689CEF00D45004 /* Info.plist */,
+			);
+			path = "ImageReader WatchKit App";
+			sourceTree = "<group>";
+		};
+		778152C01B689CEF00D45004 /* ImageReader WatchKit Extension */ = {
+			isa = PBXGroup;
+			children = (
+				778152E51B689E3700D45004 /* Vendors */,
+				77501BF21C607669004A28AC /* Post.h */,
+				77501BF31C607669004A28AC /* Post.m */,
+				778152DE1B689DD400D45004 /* IRShareController.h */,
+				778152DF1B689DD400D45004 /* IRShareController.m */,
+				778152E01B689DD400D45004 /* IRTableRowController.h */,
+				778152E11B689DD400D45004 /* IRTableRowController.m */,
+				778152C31B689CEF00D45004 /* InterfaceController.h */,
+				778152C41B689CEF00D45004 /* InterfaceController.m */,
+				778152C61B689CEF00D45004 /* ExtensionDelegate.h */,
+				778152C71B689CEF00D45004 /* ExtensionDelegate.m */,
+				778152C91B689CEF00D45004 /* NotificationController.h */,
+				778152CA1B689CEF00D45004 /* NotificationController.m */,
+				778152CC1B689CEF00D45004 /* Assets.xcassets */,
+				778152CE1B689CEF00D45004 /* Info.plist */,
+				778152C11B689CEF00D45004 /* Supporting Files */,
+			);
+			path = "ImageReader WatchKit Extension";
+			sourceTree = "<group>";
+		};
+		778152C11B689CEF00D45004 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				778152C21B689CEF00D45004 /* PushNotificationPayload.apns */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		778152E51B689E3700D45004 /* Vendors */ = {
+			isa = PBXGroup;
+			children = (
+				77501BFB1C6084DC004A28AC /* GTMNSString+HTML.h */,
+				77501BFC1C6084DC004A28AC /* GTMNSString+HTML.m */,
+				77501BF81C6084A0004A28AC /* NSString+HTML.h */,
+				77501BF91C6084A0004A28AC /* NSString+HTML.m */,
+				774407BD1BD71D230090433E /* TRVSURLSessionOperation.h */,
+				774407BE1BD71D230090433E /* TRVSURLSessionOperation.m */,
+			);
+			path = Vendors;
+			sourceTree = "<group>";
+		};
+		77A96FB91B9EC86E005E52A4 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				774407BB1BD7167F0090433E /* refresh.png */,
+				77A96FBA1B9EC86E005E52A4 /* downvote.png */,
+				77A96FBC1B9EC86E005E52A4 /* shareicon.png */,
+				77A96FBE1B9EC86E005E52A4 /* upvote.png */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		778152951B689CEE00D45004 /* ImageReader */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 778152D91B689CEF00D45004 /* Build configuration list for PBXNativeTarget "ImageReader" */;
+			buildPhases = (
+				778152921B689CEE00D45004 /* Sources */,
+				778152931B689CEE00D45004 /* Frameworks */,
+				778152941B689CEE00D45004 /* Resources */,
+				778152D81B689CEF00D45004 /* Embed Watch Content */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				778152B01B689CEF00D45004 /* PBXTargetDependency */,
+			);
+			name = ImageReader;
+			productName = ImageReader;
+			productReference = 778152961B689CEE00D45004 /* 9GAG for Apple Watch.app */;
+			productType = "com.apple.product-type.application";
+		};
+		778152AC1B689CEF00D45004 /* ImageReader WatchKit App */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 778152D51B689CEF00D45004 /* Build configuration list for PBXNativeTarget "ImageReader WatchKit App" */;
+			buildPhases = (
+				778152AB1B689CEF00D45004 /* Resources */,
+				778152D41B689CEF00D45004 /* Embed App Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				778152BF1B689CEF00D45004 /* PBXTargetDependency */,
+			);
+			name = "ImageReader WatchKit App";
+			productName = "ImageReader WatchKit App";
+			productReference = 778152AD1B689CEF00D45004 /* 9GAG for Apple Watch.app */;
+			productType = "com.apple.product-type.application.watchapp2";
+		};
+		778152BB1B689CEF00D45004 /* ImageReader WatchKit Extension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 778152D11B689CEF00D45004 /* Build configuration list for PBXNativeTarget "ImageReader WatchKit Extension" */;
+			buildPhases = (
+				778152B81B689CEF00D45004 /* Sources */,
+				778152B91B689CEF00D45004 /* Frameworks */,
+				778152BA1B689CEF00D45004 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "ImageReader WatchKit Extension";
+			productName = "ImageReader WatchKit Extension";
+			productReference = 778152BC1B689CEF00D45004 /* 9GAG for Apple Watch.appex */;
+			productType = "com.apple.product-type.watchkit2-extension";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		7781528E1B689CEE00D45004 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0700;
+				ORGANIZATIONNAME = "Syren, Franck";
+				TargetAttributes = {
+					778152951B689CEE00D45004 = {
+						CreatedOnToolsVersion = 7.0;
+						DevelopmentTeam = RDTN6V8PH2;
+					};
+					778152AC1B689CEF00D45004 = {
+						CreatedOnToolsVersion = 7.0;
+						DevelopmentTeam = RDTN6V8PH2;
+					};
+					778152BB1B689CEF00D45004 = {
+						CreatedOnToolsVersion = 7.0;
+						DevelopmentTeam = RDTN6V8PH2;
+					};
+				};
+			};
+			buildConfigurationList = 778152911B689CEE00D45004 /* Build configuration list for PBXProject "ImageReader" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 7781528D1B689CEE00D45004;
+			productRefGroup = 778152971B689CEE00D45004 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				778152951B689CEE00D45004 /* ImageReader */,
+				778152AC1B689CEF00D45004 /* ImageReader WatchKit App */,
+				778152BB1B689CEF00D45004 /* ImageReader WatchKit Extension */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		778152941B689CEE00D45004 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				778152A91B689CEE00D45004 /* LaunchScreen.storyboard in Resources */,
+				774C268E1B692F4000BC3EBF /* Icon-60@3x.png in Resources */,
+				778152A61B689CEE00D45004 /* Assets.xcassets in Resources */,
+				774C268D1B692F4000BC3EBF /* applewatch.png in Resources */,
+				778152A41B689CEE00D45004 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		778152AB1B689CEF00D45004 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				77A96FC31B9EC86E005E52A4 /* upvote.png in Resources */,
+				774407BC1BD7167F0090433E /* refresh.png in Resources */,
+				778152B61B689CEF00D45004 /* Assets.xcassets in Resources */,
+				77A96FC11B9EC86E005E52A4 /* shareicon.png in Resources */,
+				778152B41B689CEF00D45004 /* Interface.storyboard in Resources */,
+				77A96FBF1B9EC86E005E52A4 /* downvote.png in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		778152BA1B689CEF00D45004 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				778152CD1B689CEF00D45004 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		778152921B689CEE00D45004 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				778152A11B689CEE00D45004 /* ViewController.m in Sources */,
+				7781529E1B689CEE00D45004 /* AppDelegate.m in Sources */,
+				7781529B1B689CEE00D45004 /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		778152B81B689CEF00D45004 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				778152C81B689CEF00D45004 /* ExtensionDelegate.m in Sources */,
+				778152E31B689DD400D45004 /* IRShareController.m in Sources */,
+				77501BFA1C6084A0004A28AC /* NSString+HTML.m in Sources */,
+				778152E41B689DD400D45004 /* IRTableRowController.m in Sources */,
+				77501BFD1C6084DC004A28AC /* GTMNSString+HTML.m in Sources */,
+				774407BF1BD71D230090433E /* TRVSURLSessionOperation.m in Sources */,
+				77501BF41C607669004A28AC /* Post.m in Sources */,
+				778152C51B689CEF00D45004 /* InterfaceController.m in Sources */,
+				778152CB1B689CEF00D45004 /* NotificationController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		778152B01B689CEF00D45004 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 778152AC1B689CEF00D45004 /* ImageReader WatchKit App */;
+			targetProxy = 778152AF1B689CEF00D45004 /* PBXContainerItemProxy */;
+		};
+		778152BF1B689CEF00D45004 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 778152BB1B689CEF00D45004 /* ImageReader WatchKit Extension */;
+			targetProxy = 778152BE1B689CEF00D45004 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		778152A21B689CEE00D45004 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				778152A31B689CEE00D45004 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		778152A71B689CEE00D45004 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				778152A81B689CEE00D45004 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		778152B21B689CEF00D45004 /* Interface.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				778152B31B689CEF00D45004 /* Base */,
+			);
+			name = Interface.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		778152CF1B689CEF00D45004 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		778152D01B689CEF00D45004 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		778152D21B689CEF00D45004 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "iPhone Developer";
+				INFOPLIST_FILE = "ImageReader WatchKit Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.fsyren.ImageReader.watchkitapp.watchkitextension;
+				PRODUCT_NAME = "9GAG for Apple Watch";
+				PROVISIONING_PROFILE = "";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 2.0;
+			};
+			name = Debug;
+		};
+		778152D31B689CEF00D45004 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "iPhone Developer";
+				INFOPLIST_FILE = "ImageReader WatchKit Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.fsyren.ImageReader.watchkitapp.watchkitextension;
+				PRODUCT_NAME = "9GAG for Apple Watch";
+				PROVISIONING_PROFILE = "";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 2.0;
+			};
+			name = Release;
+		};
+		778152D61B689CEF00D45004 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				IBSC_MODULE = ImageReader_WatchKit_Extension;
+				INFOPLIST_FILE = "ImageReader WatchKit App/Info.plist";
+				PRODUCT_BUNDLE_IDENTIFIER = com.fsyren.ImageReader.watchkitapp;
+				PRODUCT_NAME = "9GAG for Apple Watch";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 2.0;
+			};
+			name = Debug;
+		};
+		778152D71B689CEF00D45004 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				IBSC_MODULE = ImageReader_WatchKit_Extension;
+				INFOPLIST_FILE = "ImageReader WatchKit App/Info.plist";
+				PRODUCT_BUNDLE_IDENTIFIER = com.fsyren.ImageReader.watchkitapp;
+				PRODUCT_NAME = "9GAG for Apple Watch";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 2.0;
+			};
+			name = Release;
+		};
+		778152DA1B689CEF00D45004 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				INFOPLIST_FILE = ImageReader/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.fsyren.ImageReader;
+				PRODUCT_NAME = "9GAG for Apple Watch";
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		778152DB1B689CEF00D45004 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				INFOPLIST_FILE = ImageReader/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.fsyren.ImageReader;
+				PRODUCT_NAME = "9GAG for Apple Watch";
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		778152911B689CEE00D45004 /* Build configuration list for PBXProject "ImageReader" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				778152CF1B689CEF00D45004 /* Debug */,
+				778152D01B689CEF00D45004 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		778152D11B689CEF00D45004 /* Build configuration list for PBXNativeTarget "ImageReader WatchKit Extension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				778152D21B689CEF00D45004 /* Debug */,
+				778152D31B689CEF00D45004 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		778152D51B689CEF00D45004 /* Build configuration list for PBXNativeTarget "ImageReader WatchKit App" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				778152D61B689CEF00D45004 /* Debug */,
+				778152D71B689CEF00D45004 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		778152D91B689CEF00D45004 /* Build configuration list for PBXNativeTarget "ImageReader" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				778152DA1B689CEF00D45004 /* Debug */,
+				778152DB1B689CEF00D45004 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 7781528E1B689CEE00D45004 /* Project object */;
+}

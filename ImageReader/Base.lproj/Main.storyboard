@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="8191" systemVersion="14F27" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="vXZ-lx-hvc">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="8154"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="ufC-wZ-h7g">
+            <objects>
+                <viewController id="vXZ-lx-hvc" customClass="ViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="mi8-Re-Nla"/>
+                        <viewControllerLayoutGuide type="bottom" id="uKX-iZ-dL9"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="yK5-2D-sOP">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="Enjoy 9GAG on your Apple Watch!" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BfJ-rd-sy8">
+                                <rect key="frame" x="111" y="71" width="279" height="53"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" image="applewatch.png" translatesAutoresizingMaskIntoConstraints="NO" id="GYV-3S-7qx">
+                                <rect key="frame" x="0.0" y="132" width="150" height="200"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="200" id="4mX-E0-mrM"/>
+                                </constraints>
+                            </imageView>
+                            <view contentMode="scaleToFill" ambiguous="YES" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="xLU-Cc-Eyj">
+                                <rect key="frame" x="0.0" y="462" width="667" height="100"/>
+                                <subviews>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" image="Icon-60.png" translatesAutoresizingMaskIntoConstraints="NO" id="vKN-oQ-Rcb">
+                                        <rect key="frame" x="-6" y="17" width="89" height="65"/>
+                                    </imageView>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6CS-c5-OC5">
+                                        <rect key="frame" x="83" y="36" width="190" height="28"/>
+                                        <state key="normal" title="Download 9GAG for iPhone">
+                                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="downloadFromAppStoreDidPress:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="bbT-GL-q7U"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="centerY" secondItem="vKN-oQ-Rcb" secondAttribute="centerY" constant="0.5" id="LCN-gK-PWH"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" red="0.92941176470588238" green="0.92941176470588238" blue="0.92941176470588238" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="BfJ-rd-sy8" firstAttribute="leading" secondItem="yK5-2D-sOP" secondAttribute="leadingMargin" id="Knd-ab-rXj"/>
+                            <constraint firstItem="uKX-iZ-dL9" firstAttribute="top" secondItem="xLU-Cc-Eyj" secondAttribute="bottom" id="SaI-Ii-Isx"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="BfJ-rd-sy8" secondAttribute="trailing" id="Ygn-TR-g2p"/>
+                            <constraint firstItem="GYV-3S-7qx" firstAttribute="leading" secondItem="yK5-2D-sOP" secondAttribute="leadingMargin" constant="100" id="hhj-z8-GPn"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="GYV-3S-7qx" secondAttribute="trailing" constant="100" id="zQC-OR-2qT"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
+            </objects>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="Icon-60.png" width="60" height="60"/>
+        <image name="applewatch.png" width="383" height="509"/>
+    </resources>
+</document>

@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder.WatchKit.Storyboard" version="3.0" toolsVersion="9531" systemVersion="15C50" targetRuntime="watchKit" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="Fbp-1n-EY8">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBWatchKitPlugin" version="9515"/>
+    </dependencies>
+    <scenes>
+        <!--Interface Controller-->
+        <scene sceneID="9Z5-cn-UrC">
+            <objects>
+                <controller id="Fbp-1n-EY8" customClass="InterfaceController">
+                    <items>
+                        <table alignment="left" id="fkK-9E-6Si">
+                            <items>
+                                <tableRow id="Wz9-SI-E8h" customClass="IRTableRowController">
+                                    <group key="rootItem" width="1" height="0.0" alignment="left" layout="vertical" id="0zZ-b2-PYo">
+                                        <items>
+                                            <label width="1" alignment="center" textAlignment="left" numberOfLines="0" minimumScaleFactor="0.80000000000000004" id="ek4-d8-Abm">
+                                                <fontDescription key="font" style="UICTFontTextStyleFootnote"/>
+                                            </label>
+                                            <movie width="1" alignment="left" hidden="YES" id="bp6-8w-B0n"/>
+                                            <imageView width="1" alignment="center" hidden="YES" contentMode="scaleAspectFit" animationDuration="2" id="VE1-it-SqR"/>
+                                        </items>
+                                        <edgeInsets key="margins" left="5" right="5" top="5" bottom="5"/>
+                                    </group>
+                                    <connections>
+                                        <outlet property="postGroup" destination="0zZ-b2-PYo" id="3w0-zZ-ELy"/>
+                                        <outlet property="postImage" destination="VE1-it-SqR" id="FUo-Ga-QcP"/>
+                                        <outlet property="postMovie" destination="bp6-8w-B0n" id="hFB-Tc-ULY"/>
+                                        <outlet property="postTile" destination="ek4-d8-Abm" id="ebI-Ng-ivq"/>
+                                    </connections>
+                                </tableRow>
+                            </items>
+                        </table>
+                        <button width="1" alignment="left" title="Load more" id="kVa-yT-B5d">
+                            <connections>
+                                <action selector="loadMore" destination="Fbp-1n-EY8" id="JIi-Io-f6J"/>
+                            </connections>
+                        </button>
+                    </items>
+                    <connections>
+                        <outlet property="moreButton" destination="kVa-yT-B5d" id="znX-nd-XiF"/>
+                        <outlet property="postsTable" destination="fkK-9E-6Si" id="rH0-Vg-zyk"/>
+                    </connections>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="355" y="317"/>
+        </scene>
+        <!--Dismiss-->
+        <scene sceneID="eLm-fM-Dap">
+            <objects>
+                <controller identifier="shareController" title="Dismiss" animationDuration="1" id="Fiw-97-hgA" customClass="IRShareController">
+                    <items>
+                        <button alignment="center" id="jWq-3r-5z4">
+                            <group key="contentGroup" width="1" alignment="left" id="bMA-Rb-SK6">
+                                <items>
+                                    <imageView width="24" height="24" alignment="center" verticalAlignment="center" image="shareicon.png" id="4R4-Ia-6Rb"/>
+                                    <label width="97" alignment="center" verticalAlignment="center" text="Open in iPhone" textAlignment="center" numberOfLines="2" id="41C-ip-ejS">
+                                        <fontDescription key="font" style="UICTFontTextStyleFootnote"/>
+                                    </label>
+                                </items>
+                                <color key="backgroundColor" red="0.17254901959999999" green="0.63137254899999995" blue="0.87843137250000003" alpha="1" colorSpace="calibratedRGB"/>
+                                <edgeInsets key="margins" left="4" right="4" top="6" bottom="6"/>
+                            </group>
+                            <connections>
+                                <action selector="shareByEmail" destination="Fiw-97-hgA" id="8G0-5l-G7v"/>
+                            </connections>
+                        </button>
+                        <group width="1" alignment="left" layout="vertical" id="FBz-wO-1lp">
+                            <items>
+                                <label width="1" alignment="center" textAlignment="left" numberOfLines="0" minimumScaleFactor="0.80000000000000004" id="1m6-cr-S4L">
+                                    <fontDescription key="font" style="UICTFontTextStyleFootnote"/>
+                                </label>
+                                <movie width="1" alignment="left" hidden="YES" id="9Vd-AV-edj"/>
+                                <imageView width="1" alignment="center" hidden="YES" contentMode="scaleAspectFit" animationDuration="2" id="Xhj-IV-7sZ"/>
+                            </items>
+                            <edgeInsets key="margins" left="5" right="5" top="5" bottom="5"/>
+                        </group>
+                    </items>
+                    <connections>
+                        <outlet property="image" destination="Xhj-IV-7sZ" id="ZSn-yv-aGQ"/>
+                        <outlet property="movie" destination="9Vd-AV-edj" id="JXE-id-t23"/>
+                        <outlet property="titleLabel" destination="1m6-cr-S4L" id="0Vv-Nr-7wU"/>
+                    </connections>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="550" y="316"/>
+        </scene>
+    </scenes>
+</document>
